@@ -1,0 +1,10 @@
+[tool.pytest.ini_options]
+addopts = "-vv -s --showlocals -rfEX --durations=10 --alluredir=allure-results"
+markers = [
+    "web: Помечает тест как веб",
+    "mobile: Помечает тест для мобилки",
+    "regression: Помечает регрессионные тесты",
+    "smoke: Помечает критические тесты",
+    "slow: Помечает медленные тесты",
+    "fast: Помечает быстрые тесты"
+]
